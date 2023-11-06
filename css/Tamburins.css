@@ -93,7 +93,6 @@ body {
   width: 1600px;
   height: 1000px;
   background-color: #171717;
-  border: 1px solid #ffffff;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -111,6 +110,18 @@ body {
 .one .text {
   font-family: "Pretendard-Regular";
   font-size: 1.1rem;
+  transform: translateY(100px);
+  transition: all 2s;
+  opacity: 0;
+}
+
+.work {
+  width: 1200px;
+  height: 600px;
+  background-color: #fff;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 10px;
   transform: translateY(100px);
   transition: all 2s;
   opacity: 0;

@@ -17,3 +17,12 @@ $(window).scroll(function () {
         $(".text").css({ "transform": "translateY(0px)", "opacity": "1" });
     }
 });
+
+$(window).scroll(function () {
+    let ws2 = $(this).scrollTop();
+
+    let work = $(".work").offset().top;
+    if (ws2 > work - 480) {
+        $(".work").css({ "transform": "translateY(0px)", "opacity": "1" });
+    }
+});
