@@ -15,7 +15,7 @@ ul, li, ol {
 .wrap {
   width: 100%;
   height: 100vh;
-  background-color: #171717;
+  background-color: #050505;
 }
 
 @keyframes flash {

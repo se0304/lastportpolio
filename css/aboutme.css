@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@300&display=swap");
+.l-nav {
+  width: 6%;
+  background-color: transparent;
+  height: 100vh;
+  position: absolute;
+}
+.l-nav ul li {
+  display: flex;
+  justify-content: center;
+}
+.l-nav ul li a {
+  margin: 60px;
+  writing-mode: vertical-lr;
+  text-align: center;
+  rotate: 180deg;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+}
+
+.textend {
+  margin-top: 28rem !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #050505;
+}
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+  background-color: #050505;
+}
+
+.whitewrap {
+  background-color: #050505;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div {
+  width: 1600px;
+  height: 100vh;
+  background-color: #aaaaaa;
+  color: #fff;
+}
+.div .p {
+  height: 80px;
+  position: absolute;
+  margin-top: 20rem;
+  margin-left: 6rem;
+  font-family: "Pretendard-Regular";
+  font-size: 1.5rem;
+  animation: fadeInUp 4s;
+  color: #ffffff;
+}
+.div .half {
+  width: 800px;
+  height: 100vh;
+  background-color: blanchedalmond;
+  float: right;
+}
+
+.white {
+  width: 80px;
+  height: 90px;
+  position: absolute;
+  background-color: transparent;
+  animation: move 1500ms;
+  animation-fill-mode: forwards;
+  transform: translate(-50%);
+  left: 15%;
+  opacity: 0;
+  scrollbar-width: none;
+}
+.white:nth-of-type(2) {
+  width: 80px;
+  height: 90px;
+  position: absolute;
+  left: 19.2%;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.white:nth-of-type(3) {
+  width: 80px;
+  height: 90px;
+  position: absolute;
+  left: 23.5%;
+  animation-delay: 0.7s;
+}
+.white:nth-of-type(4) {
+  width: 80px;
+  height: 90px;
+  position: absolute;
+  left: 27.7%;
+  animation-delay: 0.9s;
+}
+.white:nth-of-type(5) {
+  width: 80px;
+  height: 90px;
+  position: absolute;
+  left: 32%;
+  animation-delay: 1s;
+}
+.white:nth-of-type(6) {
+  width: 80px;
+  height: 90px;
+  position: absolute;
+  left: 36.2%;
+  animation-delay: 1.3s;
+}
+.white p {
+  color: #ffffff;
+  font-family: "Pretendard-Regular";
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+@keyframes move {
+  from {
+    bottom: 100%;
+    scrollbar-width: none;
+  }
+  to {
+    bottom: 70%;
+    opacity: 1;
+    scrollbar-width: none;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}

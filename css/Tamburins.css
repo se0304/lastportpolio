@@ -19,7 +19,7 @@ ul, li, ol {
   font-style: normal;
 }
 body {
-  background-color: #171717;
+  background-color: #050505;
 }
 
 .white {
@@ -91,8 +91,8 @@ body {
 }
 .one {
   width: 1600px;
-  height: 1000px;
-  background-color: #171717;
+  height: 4450px;
+  background-color: #050505;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -113,11 +113,12 @@ body {
   transform: translateY(100px);
   transition: all 2s;
   opacity: 0;
+  line-height: 2rem;
 }
 
 .work {
-  width: 1200px;
-  height: 600px;
+  width: 1500px;
+  height: 800px;
   background-color: #fff;
   margin-top: 30px;
   overflow: hidden;
@@ -125,4 +126,99 @@ body {
   transform: translateY(100px);
   transition: all 2s;
   opacity: 0;
+  margin: auto;
+}
+.work video {
+  width: 125.8%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.workimg {
+  width: 1200px;
+  height: 600px;
+  background-color: transparent;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  transform: translateY(0px);
+  opacity: 0;
+  transition: all 2s;
+  margin: auto;
+  overflow: hidden;
+}
+
+.worktext {
+  width: 1500px;
+  height: 560px;
+  background-color: beige;
+  margin-top: 15rem !important;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: auto;
+  transform: translateY(100px);
+  transition: all 2s;
+  opacity: 0;
+}
+.worktext video {
+  width: 100%;
+}
+
+.worktext2 {
+  width: 1500px;
+  height: 560px;
+  background-color: beige;
+  margin-top: 12rem !important;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: auto;
+  transform: translateY(100px);
+  transition: all 2s;
+  opacity: 0;
+}
+.worktext2 video {
+  width: 100%;
+}
+
+.text2 {
+  margin-top: 8rem;
+  font-family: "Pretendard-Regular";
+  font-size: 1.1rem;
+  transform: translateY(0px);
+  transition: all 2s;
+  opacity: 0;
+}
+
+.text3 {
+  margin-top: 5rem;
+  font-family: "Pretendard-Regular";
+  font-size: 1.1rem;
+  line-height: 2rem;
+  transform: translateY(100px);
+  transition: all 2s;
+  opacity: 0;
+}
+
+.icon {
+  width: 500px;
+  height: 200px;
+  background-color: transparent;
+  margin: auto;
+  margin-top: 7rem;
+}
+.icon ul li {
+  line-height: 5rem;
+  line-height: 5rem;
+  font-family: "Pretendard-Regular";
+  font-size: 1.3rem;
+}
+.icon ul li a {
+  color: #fff;
+  font-family: "Pretendard-Regular";
+  font-size: 1.3rem;
+}
+.icon ul li a:hover {
+  color: #dddddd;
 }
