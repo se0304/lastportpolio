@@ -62,26 +62,33 @@ body {
 }
 
 .div {
+  position: relative;
   width: 1600px;
   height: 100vh;
-  background-color: #aaaaaa;
+  background-color: transparent;
   color: #fff;
+  overflow: hidden;
 }
 .div .p {
   height: 80px;
   position: absolute;
-  margin-top: 20rem;
-  margin-left: 6rem;
+  top: 24%;
+  left: 5.5%;
   font-family: "Pretendard-Regular";
   font-size: 1.5rem;
-  animation: fadeInUp 4s;
+  animation: fadeInUp 3.8s;
   color: #ffffff;
 }
 .div .half {
   width: 800px;
   height: 100vh;
-  background-color: blanchedalmond;
   float: right;
+}
+.div .textzip {
+  width: 800px;
+  height: 300px;
+  position: relative;
+  top: 10%;
 }
 
 .white {
@@ -100,7 +107,7 @@ body {
   width: 80px;
   height: 90px;
   position: absolute;
-  left: 19.2%;
+  left: 25%;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
@@ -108,28 +115,28 @@ body {
   width: 80px;
   height: 90px;
   position: absolute;
-  left: 23.5%;
+  left: 35%;
   animation-delay: 0.7s;
 }
 .white:nth-of-type(4) {
   width: 80px;
   height: 90px;
   position: absolute;
-  left: 27.7%;
+  left: 44.8%;
   animation-delay: 0.9s;
 }
 .white:nth-of-type(5) {
   width: 80px;
   height: 90px;
   position: absolute;
-  left: 32%;
+  left: 54.5%;
   animation-delay: 1s;
 }
 .white:nth-of-type(6) {
   width: 80px;
   height: 90px;
   position: absolute;
-  left: 36.2%;
+  left: 64%;
   animation-delay: 1.3s;
 }
 .white p {
@@ -160,4 +167,205 @@ body {
     opacity: 1;
     transform: translateZ(0);
   }
+}
+.certificate {
+  width: 700px;
+  height: 300px;
+  background-color: transparent;
+  position: absolute;
+  top: 35%;
+  left: 5.25%;
+  z-index: 1;
+}
+.certificate h2 {
+  font-family: "Pretendard-Regular";
+  font-size: 1.5rem;
+  animation: fadeInLeft 3s;
+  animation-delay: 2.3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.certificate p {
+  font-family: "Pretendard-Regular";
+  font-size: 1.2rem;
+  font-weight: bold;
+  animation: fadeInDown 2s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.certificate p:nth-of-type(2) {
+  animation: fadeInDown 2s;
+  animation-delay: 6.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.certificate p:nth-of-type(3) {
+  animation: fadeInDown 2s;
+  animation-delay: 7.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.certificate p span {
+  font-family: "Pretendard-Regular";
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.container {
+  width: 450px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 22rem;
+  margin-left: 4.5rem;
+  font-family: "Pretendard-Regular";
+  animation: fadeInUp 2s;
+  animation-delay: 10s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.container .flex {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+.container .bar {
+  width: 250px;
+  height: 30px;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 0 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.container .inside1 {
+  border-radius: 30px;
+  width: 90%;
+  height: 29px;
+  background: rgb(255, 255, 255);
+  animation: slide1 2s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+.container .inside2 {
+  border-radius: 30px;
+  width: 90%;
+  height: 29px;
+  background: rgb(255, 255, 255);
+  animation: slide2 2s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+.container .inside3 {
+  border-radius: 30px;
+  width: 70%;
+  height: 29px;
+  background: rgb(255, 255, 255);
+  animation: slide3 2s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+.container .inside4 {
+  border-radius: 30px;
+  width: 50%;
+  height: 29px;
+  background: rgb(255, 255, 255);
+  animation: slide4 2s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+.container .inside5 {
+  border-radius: 30px;
+  width: 65%;
+  height: 29px;
+  background: rgb(255, 255, 255);
+  animation: slide5 2s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+.container .inside6 {
+  border-radius: 30px;
+  width: 40%;
+  height: 29px;
+  background: rgb(255, 255, 255);
+  animation: slide6 2s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+@keyframes slide1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes slide2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes slide3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes slide4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes slide5 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65%;
+  }
+}
+@keyframes slide6 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+.iconslide {
+  width: 800px;
+  height: 500px;
+}
+
+swiper-container {
+  width: 800px;
+  height: 500px;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 40%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
