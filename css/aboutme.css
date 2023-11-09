@@ -13,7 +13,7 @@
   margin: 60px;
   writing-mode: vertical-lr;
   text-align: center;
-  rotate: 180deg;
+  transform: rotate(180deg);
   color: #fff;
   font-family: "Quicksand", sans-serif;
 }
@@ -222,7 +222,7 @@ body {
   margin-left: 4.5rem;
   font-family: "Pretendard-Regular";
   animation: fadeInUp 2s;
-  animation-delay: 10s;
+  animation-delay: 9s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
@@ -247,7 +247,7 @@ body {
   background: rgb(255, 255, 255);
   animation: slide1 2s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 10s;
+  animation-delay: 9s;
 }
 .container .inside2 {
   border-radius: 30px;
@@ -256,7 +256,7 @@ body {
   background: rgb(255, 255, 255);
   animation: slide2 2s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 10s;
+  animation-delay: 9s;
 }
 .container .inside3 {
   border-radius: 30px;
@@ -265,16 +265,16 @@ body {
   background: rgb(255, 255, 255);
   animation: slide3 2s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 10s;
+  animation-delay: 9s;
 }
 .container .inside4 {
   border-radius: 30px;
-  width: 50%;
+  width: 40%;
   height: 29px;
   background: rgb(255, 255, 255);
   animation: slide4 2s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 10s;
+  animation-delay: 9s;
 }
 .container .inside5 {
   border-radius: 30px;
@@ -283,7 +283,7 @@ body {
   background: rgb(255, 255, 255);
   animation: slide5 2s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 10s;
+  animation-delay: 9s;
 }
 .container .inside6 {
   border-radius: 30px;
@@ -292,7 +292,7 @@ body {
   background: rgb(255, 255, 255);
   animation: slide6 2s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 10s;
+  animation-delay: 9s;
 }
 @keyframes slide1 {
   from {
@@ -323,7 +323,7 @@ body {
     width: 0;
   }
   to {
-    width: 50%;
+    width: 40%;
   }
 }
 @keyframes slide5 {
@@ -346,17 +346,25 @@ body {
 .iconslide {
   width: 800px;
   height: 500px;
+  animation: fadeInUp 2s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  opacity: 0;
+  animation-delay: 11s;
 }
 
-swiper-container {
-  width: 800px;
-  height: 500px;
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-swiper-slide {
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,8 +372,94 @@ swiper-slide {
 
 swiper-slide img {
   display: block;
-  width: 40%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.longtext {
+  width: 800px;
+  height: 420.5px;
+  font-family: "Pretendard-Regular";
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  margin-top: 2rem;
+  animation: fadeInUp 3.8s;
+  animation-delay: 12.8s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.longtext span {
+  font-size: 1.6rem !important;
+  font-weight: bold;
+  animation: fadeIn 3s;
+  opacity: 0;
+  animation-delay: 13.8s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+.longtext span:nth-of-type(2) {
+  animation: fadeIn 3s;
+  opacity: 0;
+  animation-delay: 16s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+.longtext span:nth-of-type(3) {
+  animation: fadeIn 3s;
+  opacity: 0;
+  animation-delay: 17.6s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+.longtext span:nth-of-type(4) {
+  animation: fadeIn 3s;
+  opacity: 0;
+  animation-delay: 18.9s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+.longtext p {
+  font-weight: bold;
+  animation: fadeIn 3.5s;
+  opacity: 0;
+  animation-delay: 14.6s;
+  animation-fill-mode: forwards;
+  display: inline;
+}
+.longtext p:nth-of-type(2) {
+  animation: fadeIn 3.5s;
+  opacity: 0;
+  animation-delay: 16.5s;
+  animation-fill-mode: forwards;
+  display: inline;
+}
+.longtext p:nth-of-type(3) {
+  animation: fadeIn 3.5s;
+  opacity: 0;
+  animation-delay: 17.3s;
+  animation-fill-mode: forwards;
+  display: inline;
+}
+.longtext p:nth-of-type(4) {
+  animation: fadeIn 3.5s;
+  opacity: 0;
+  animation-delay: 18.2s;
+  animation-fill-mode: forwards;
+  display: inline;
+}
+.longtext p:nth-of-type(5) {
+  animation: fadeIn 3.5s;
+  opacity: 0;
+  animation-delay: 19.7s;
+  animation-fill-mode: forwards;
+  display: inline;
+}
+.longtext p:nth-of-type(6) {
+  animation: fadeIn 3.5s;
+  opacity: 0;
+  animation-delay: 20s;
+  animation-fill-mode: forwards;
+  display: inline;
 }

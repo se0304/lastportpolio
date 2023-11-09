@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@300&display=swap");
+.l-nav {
+  width: 6%;
+  background-color: transparent;
+  height: 100vh;
+  position: absolute;
+}
+.l-nav ul li {
+  display: flex;
+  justify-content: center;
+}
+.l-nav ul li a {
+  margin: 60px;
+  writing-mode: vertical-lr;
+  text-align: center;
+  transform: rotate(180deg);
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+}
+
+.textend {
+  margin-top: 28rem !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+  background-color: #050505;
+  position: absolute;
+}
+#wrap .contactwrap {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap .contactwrap .contact {
+  width: 1600px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#wrap .contactwrap .contact .email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+  width: 600px;
+  height: 500px;
+  animation: fadeInDown 2.5s;
+  animation-delay: 3s;
+  z-index: 1;
+}
+#wrap .contactwrap .contact .email .con {
+  color: white;
+  position: absolute;
+  top: 10%;
+  font-size: 6rem;
+  font-weight: bold;
+  animation: fadeInUp 2.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+#wrap .contactwrap .contact .email .email-me {
+  width: 600px;
+  height: 500px;
+  font-family: "Pretendard-Regular";
+  background-color: #ffffff;
+}
+#wrap .contactwrap .contact .email .email-me fieldset {
+  border: none;
+}
+#wrap .contactwrap .contact .email .email-me .userName {
+  width: 450px;
+  height: 20px;
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Pretendard-Regular";
+}
+#wrap .contactwrap .contact .email .email-me .userEmail {
+  width: 450px;
+  height: 20px;
+  margin-top: 10px;
+  font-family: "Pretendard-Regular";
+}
+#wrap .contactwrap .contact .email .email-me .userMessage {
+  width: 452px;
+  height: 300px;
+  margin-top: 10px;
+  font-family: "Pretendard-Regular";
+}
+#wrap .contactwrap .contact .email .email-me .btn-send {
+  width: 120px;
+  height: 30px;
+  margin-top: 10px;
+}

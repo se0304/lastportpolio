@@ -39,7 +39,7 @@ body {
     bottom: 100%;
   }
   to {
-    bottom: 6.55%;
+    bottom: 6.6%;
   }
 }
 .l-nav {
@@ -57,7 +57,7 @@ body {
   margin: 60px;
   writing-mode: vertical-lr;
   text-align: center;
-  rotate: 180deg;
+  transform: rotate(180deg);
   color: #ffffff;
   font-family: "Quicksand", sans-serif;
 }
