@@ -1,6 +1,6 @@
 $(window).scroll(function () {
     let ws = $(this).scrollTop();
-   
+
 
     let hidebox = $(".hide").offset().top;
     if (ws > hidebox - 700) {
@@ -13,7 +13,7 @@ $(window).scroll(function () {
     }
 
     // 상단 텍스트 
-    
+
 
     let work = $(".work").offset().top;
     if (ws > work - 400) {
@@ -49,20 +49,40 @@ $(window).scroll(function () {
     }
 
     let worktext3 = $(".text3").offset().top;
-    if (ws> worktext3 - 920) {
+    if (ws > worktext3 - 920) {
         $(".text3").css({ "transform": "translateY(0px)", "opacity": "1" });
     }
 
     // 메인페이지 서브 페이지 장바구니 영상과 설명 텍스트
 
-    if(ws>worktext3-300){
+    if (ws > worktext3 - 300) {
         console.log('d')
         $(".icon").addClass("animate__zoomIn")
         $(".icon").show();
-    }else {
+    } else {
         $(".icon").removeClass("animate__zoomIn")
         $(".icon").fadeOut();
     }
 
 
 });
+
+
+
+$(function () {
+    // $('.intext').hide();
+    const outtext = document.getElementsByClassName('outtext')[0];
+    outtext.addEventListener('animationend', () => {
+        $('.pwrap').mouseenter(function () {
+            $('.outtext').css("opacity", "0");
+            $('.intext').fadeIn();
+        });
+        $('.pwrap').mouseleave(function () {
+            $('.outtext').css("opacity", "1");
+            $('.intext').hide();
+        });
+    })
+
+
+});
+

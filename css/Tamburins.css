@@ -63,20 +63,34 @@ body {
 }
 
 .textend {
-  margin-top: 28rem !important;
+  margin-top: 16.6rem !important;
 }
 
 .textbox {
   height: 780px;
   display: flex;
   justify-content: center;
-  align-items: end;
 }
-.textbox p {
+.textbox .pwrap {
+  height: 0px;
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 85%;
+}
+.textbox .pwrap p {
   font-size: 12rem;
   font-family: "DM Serif Display", serif;
   font-style: italic;
   animation: fadeInUp 4s;
+  cursor: pointer;
+  position: absolute;
+}
+.textbox .pwrap p:nth-of-type(2) a {
+  color: #000;
+  display: none;
 }
 
 @keyframes fadeInUp {

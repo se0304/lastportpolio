@@ -19,7 +19,7 @@
 }
 
 .textend {
-  margin-top: 28rem !important;
+  margin-top: 27rem !important;
 }
 
 * {
@@ -427,6 +427,7 @@ swiper-slide img {
   animation-delay: 14.6s;
   animation-fill-mode: forwards;
   display: inline;
+  font-weight: normal;
 }
 .longtext p:nth-of-type(2) {
   animation: fadeIn 3.5s;
@@ -459,7 +460,7 @@ swiper-slide img {
 .longtext p:nth-of-type(6) {
   animation: fadeIn 3.5s;
   opacity: 0;
-  animation-delay: 20s;
+  animation-delay: 20.5s;
   animation-fill-mode: forwards;
   display: inline;
 }

@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #050505;
+}
+
+.white {
+  width: 1600px;
+  height: 900px;
+  position: absolute;
+  background-color: #ffffff;
+  animation: move 1500ms ease-in-out;
+  animation-fill-mode: forwards;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@keyframes move {
+  from {
+    bottom: 100%;
+  }
+  to {
+    bottom: 6.6%;
+  }
+}
+.l-nav {
+  z-index: 99;
+  width: 6%;
+  background-color: transparent;
+  height: 100vh;
+  position: fixed;
+}
+.l-nav ul li {
+  display: flex;
+  justify-content: center;
+}
+.l-nav ul li a {
+  margin: 60px;
+  writing-mode: vertical-lr;
+  text-align: center;
+  transform: rotate(180deg);
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+}
+
+.textend {
+  margin-top: 16.6rem !important;
+}
+
+.textbox {
+  height: 780px;
+  display: flex;
+  justify-content: center;
+}
+.textbox .pwrap {
+  height: 0px;
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 85%;
+}
+.textbox .pwrap p {
+  font-size: 12rem;
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+  animation: fadeInUp 4s;
+  cursor: pointer;
+  position: absolute;
+}
+.textbox .pwrap p:nth-of-type(2) a {
+  color: #000;
+  display: none;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+.one {
+  width: 1600px;
+  height: 4450px;
+  background-color: #050505;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.one .hide {
+  margin-top: 5rem;
+  font-family: "Pretendard-Regular";
+  font-size: 2.5rem;
+  line-height: 4rem;
+  transform: translateY(100px);
+  transition: all 2s;
+  opacity: 0;
+}
+.one .text {
+  font-family: "Pretendard-Regular";
+  font-size: 1.1rem;
+  transform: translateY(100px);
+  transition: all 2s;
+  opacity: 0;
+  line-height: 2rem;
+}
+
+.work {
+  width: 1500px;
+  height: 800px;
+  background-color: transparent;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  transform: translateY(100px);
+  transition: all 2s;
+  opacity: 0;
+  margin: auto;
+}
+.work img {
+  width: 50%;
+  margin-top: 15rem;
+}
+
+.workimg {
+  width: 1200px;
+  height: 600px;
+  background-color: transparent;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  transform: translateY(0px);
+  opacity: 0;
+  transition: all 2s;
+  margin: auto;
+  overflow: hidden;
+}
+
+.worktext {
+  width: 1500px;
+  height: 560px;
+  background-color: beige;
+  margin-top: 15rem !important;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: auto;
+  transform: translateY(100px);
+  transition: all 2s;
+  opacity: 0;
+}
+.worktext video {
+  width: 100%;
+}
+
+.worktext2 {
+  width: 1500px;
+  height: 560px;
+  background-color: beige;
+  margin-top: 12rem !important;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: auto;
+  transform: translateY(100px);
+  transition: all 2s;
+  opacity: 0;
+}
+.worktext2 video {
+  width: 100%;
+}
+
+.text2 {
+  margin-top: 8rem;
+  font-family: "Pretendard-Regular";
+  font-size: 1.1rem;
+  transform: translateY(0px);
+  transition: all 2s;
+  opacity: 0;
+}
+
+.text3 {
+  margin-top: 5rem;
+  font-family: "Pretendard-Regular";
+  font-size: 1.1rem;
+  line-height: 2rem;
+  transform: translateY(100px);
+  transition: all 2s;
+  opacity: 0;
+}
+
+.icon {
+  width: 500px;
+  height: 200px;
+  background-color: transparent;
+  margin: auto;
+  margin-top: 7rem;
+}
+.icon ul li {
+  line-height: 5rem;
+  line-height: 5rem;
+  font-family: "Pretendard-Regular";
+  font-size: 1.3rem;
+}
+.icon ul li a {
+  color: #fff;
+  font-family: "Pretendard-Regular";
+  font-size: 1.3rem;
+}
+.icon ul li a:hover {
+  color: #dddddd;
+}

@@ -19,7 +19,7 @@
 }
 
 .textend {
-  margin-top: 28rem !important;
+  margin-top: 27rem !important;
 }
 
 * {
@@ -35,6 +35,12 @@ ul, li, ol {
   list-style: none;
 }
 
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
 #wrap {
   width: 100%;
   height: 100vh;
@@ -56,58 +62,128 @@ ul, li, ol {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: -9rem;
 }
-#wrap .contactwrap .contact .email {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -30px;
-  width: 600px;
-  height: 500px;
-  animation: fadeInDown 2.5s;
-  animation-delay: 3s;
-  z-index: 1;
-}
-#wrap .contactwrap .contact .email .con {
+#wrap .contactwrap .contact .con {
   color: white;
   position: absolute;
-  top: 10%;
+  top: 3.5rem;
   font-size: 6rem;
   font-weight: bold;
   animation: fadeInUp 2.5s;
   opacity: 0;
   animation-fill-mode: forwards;
+  font-family: "DM Serif Display", serif;
+  font-weight: normal;
+  cursor: default;
+}
+#wrap .contactwrap .contact .email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  width: 600px;
+  height: 500px;
+  animation: fadeIn 2s;
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 #wrap .contactwrap .contact .email .email-me {
   width: 600px;
   height: 500px;
   font-family: "Pretendard-Regular";
   background-color: #ffffff;
+  border-radius: 10px;
 }
 #wrap .contactwrap .contact .email .email-me fieldset {
   border: none;
 }
 #wrap .contactwrap .contact .email .email-me .userName {
   width: 450px;
-  height: 20px;
+  height: 30px;
   text-align: center;
   margin-top: 40px;
   font-family: "Pretendard-Regular";
+  border: 1px solid #050505;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 #wrap .contactwrap .contact .email .email-me .userEmail {
   width: 450px;
-  height: 20px;
+  height: 25px;
   margin-top: 10px;
   font-family: "Pretendard-Regular";
+  border: 1px solid #050505;
+  border-radius: 5px;
+  font-size: 0.8rem;
 }
 #wrap .contactwrap .contact .email .email-me .userMessage {
   width: 452px;
   height: 300px;
   margin-top: 10px;
   font-family: "Pretendard-Regular";
+  border: 1px solid #050505;
+  border-radius: 5px;
+  font-size: 1rem;
 }
-#wrap .contactwrap .contact .email .email-me .btn-send {
+
+.btn-send {
   width: 120px;
-  height: 30px;
-  margin-top: 10px;
+  height: 40px;
+  margin-top: 25px;
+  border: 1px none;
+  background-color: #050505;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Pretendard-Regular";
+  cursor: pointer;
+}
+
+.iconmove {
+  width: 500px;
+  height: 120px;
+  position: absolute;
+  top: 74.8%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  animation: fadeInUp 3s;
+  animation-delay: 2.3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.iconmove .icon {
+  width: 166px;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconmove .icon p {
+  position: absolute;
+  bottom: -2%;
+  color: #fff;
+  text-align: center;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  cursor: default;
+}
+.iconmove .icon img {
+  width: 45%;
+  margin-top: -4rem;
+  animation: swing 2s;
+  animation-delay: 3s;
+}
+.iconmove .icon .two {
+  width: 42.5%;
+}
+.iconmove .icon .three {
+  width: 43.5%;
+}
+
+.pone {
+  font-size: 13px !important;
 }
