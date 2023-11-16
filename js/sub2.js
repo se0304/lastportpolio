@@ -36,5 +36,3 @@ $(function(){
         $(".imgbox4").fadeOut();
     })
 });
-
-

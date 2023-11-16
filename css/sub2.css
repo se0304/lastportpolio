@@ -2,6 +2,29 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: url("../img/cu.png") 16 16, auto;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #bfbfbf #050505;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;
+  border-radius: 10px;
+  border: 3px solid #050505;
 }
 
 a {
@@ -54,10 +77,12 @@ ul, li, ol {
 @keyframes move {
   from {
     bottom: 0%;
+    cursor: none;
   }
   to {
     bottom: 100%;
     display: none;
+    cursor: none;
   }
 }
 .linkwrap {
@@ -89,7 +114,7 @@ ul, li, ol {
 }
 .linkwrap .link ul li a:hover {
   transform: skew(-10deg);
-  color: rgb(201, 201, 201);
+  color: #111111;
 }
 
 .imgbox {

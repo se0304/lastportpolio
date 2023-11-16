@@ -2,6 +2,29 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: url("../img/cu.png") 16 16, auto;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #bfbfbf #050505;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;
+  border-radius: 10px;
+  border: 3px solid #050505;
 }
 
 a {
@@ -37,9 +60,11 @@ body {
 @keyframes move {
   from {
     bottom: 100%;
+    cursor: none;
   }
   to {
     bottom: 6.6%;
+    cursor: none;
   }
 }
 .l-nav {
@@ -97,10 +122,12 @@ body {
   0% {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
+    cursor: none;
   }
   to {
     opacity: 1;
     transform: translateZ(0);
+    cursor: none;
   }
 }
 .one {
