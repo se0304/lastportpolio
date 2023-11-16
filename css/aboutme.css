@@ -237,7 +237,7 @@ body {
 
 .container {
   width: 450px;
-  height: 250px;
+  height: 210px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -255,8 +255,8 @@ body {
   align-items: center;
 }
 .container .bar {
-  width: 250px;
-  height: 30px;
+  width: 100px;
+  height: 20px;
   border: 1px solid rgb(255, 255, 255);
   margin: 0 20px;
   border-radius: 20px;
@@ -266,7 +266,7 @@ body {
 .container .inside1 {
   border-radius: 30px;
   width: 90%;
-  height: 29px;
+  height: 20px;
   background: rgb(255, 255, 255);
   animation: slide1 2s ease-in-out;
   animation-fill-mode: forwards;
@@ -275,7 +275,7 @@ body {
 .container .inside2 {
   border-radius: 30px;
   width: 90%;
-  height: 29px;
+  height: 20px;
   background: rgb(255, 255, 255);
   animation: slide2 2s ease-in-out;
   animation-fill-mode: forwards;
@@ -284,7 +284,7 @@ body {
 .container .inside3 {
   border-radius: 30px;
   width: 70%;
-  height: 29px;
+  height: 20px;
   background: rgb(255, 255, 255);
   animation: slide3 2s ease-in-out;
   animation-fill-mode: forwards;
@@ -293,7 +293,7 @@ body {
 .container .inside4 {
   border-radius: 30px;
   width: 40%;
-  height: 29px;
+  height: 20px;
   background: rgb(255, 255, 255);
   animation: slide4 2s ease-in-out;
   animation-fill-mode: forwards;
@@ -302,7 +302,7 @@ body {
 .container .inside5 {
   border-radius: 30px;
   width: 65%;
-  height: 29px;
+  height: 20px;
   background: rgb(255, 255, 255);
   animation: slide5 2s ease-in-out;
   animation-fill-mode: forwards;
@@ -311,7 +311,7 @@ body {
 .container .inside6 {
   border-radius: 30px;
   width: 40%;
-  height: 29px;
+  height: 20px;
   background: rgb(255, 255, 255);
   animation: slide6 2s ease-in-out;
   animation-fill-mode: forwards;
@@ -368,7 +368,7 @@ body {
 
 .iconslide {
   width: 800px;
-  height: 500px;
+  height: 455px;
   animation: fadeInUp 2s;
   animation-fill-mode: forwards;
   overflow: hidden;

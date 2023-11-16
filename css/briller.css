@@ -256,3 +256,7 @@ body {
 .icon ul li a:hover {
   color: #dddddd;
 }
+
+.cus {
+  cursor: pointer;
+}
